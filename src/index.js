@@ -1,26 +1,34 @@
-class Sorter {
-  constructor() {
+class Sorter {constructor() {
     // your implementation
+  this.array = [];
+    
   }
 
   add(element) {
-    // your implementation
+      
+      this.array.push(element);
+  // done! sorter.add(5) , sorter.add('5') and save in array
   }
 
   at(index) {
-    // your implementation
+  return this.array[index];
   }
 
   get length() {
-    // your implementation
+   return this.array.length; 
+      
+      
   }
 
   toArray() {
-    // your implementation
+    return this.array;
   }
-
+        //[0]
   sort(indices) {
     // your implementation
+       //sorter.sort([0])
+      return this.array[indices];
+      
   }
 
   setComparator(compareFunction) {
