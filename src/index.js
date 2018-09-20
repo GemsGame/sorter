@@ -33,7 +33,8 @@ sort(indices) {
 //var arr2 = [1,2]; //индексы
     
 var arr1 = this.array;
-var arr2 = indices;   
+var arr2 = indices;
+arr2.sort ((a,b) => a>b);
     
 var arrSort = []; // сортировка
 
